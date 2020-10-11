@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>example-payment</module>
+        <module>example-common</module>
+    </modules>
+
     <name>spring-cloud-example</name>
     <url>http://www.huangfusuper.cn</url>
     <description>SpringCloud实例项目</description>
@@ -25,6 +30,10 @@
         <mysql-version>8.0.11</mysql-version>
         <druid-version>1.2.1</druid-version>
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
+        <mybatis-plus-boot-starter-version>3.2.0</mybatis-plus-boot-starter-version>
+        <druid-spring-boot-starter-version>1.2.1</druid-spring-boot-starter-version>
+        <lombok-version>1.18.14</lombok-version>
+        <fastjson-version>1.2.74</fastjson-version>
     </properties>
 
     <!--版本锁定-->
@@ -68,6 +77,42 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3-version}</version>
             </dependency>
+
+            <!--mybatis版本号管理-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter-version}</version>
+            </dependency>
+
+            <!--druid 整合Springboot-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter-version}</version>
+            </dependency>
+
+            <!-- lombok 版本锁定 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-web-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
