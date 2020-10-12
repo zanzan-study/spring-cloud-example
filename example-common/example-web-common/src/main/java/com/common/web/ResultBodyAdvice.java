@@ -1,7 +1,7 @@
 package com.common.web;
 
 import com.alibaba.fastjson.JSON;
-import com.common.result.CommonResult;
+import com.common.core.result.CommonResult;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.ServerHttpRequest;

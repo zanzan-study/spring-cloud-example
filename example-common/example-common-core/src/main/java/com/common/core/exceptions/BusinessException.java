@@ -1,4 +1,4 @@
-package com.common.exceptions;
+package com.common.core.exceptions;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

@@ -1,6 +1,6 @@
-package com.common.result;
+package com.common.core.result;
 
-import com.common.exceptions.UnknownEnum;
+import com.common.core.exceptions.UnknownEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

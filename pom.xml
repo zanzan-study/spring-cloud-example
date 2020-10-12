@@ -34,6 +34,9 @@
         <druid-spring-boot-starter-version>1.2.1</druid-spring-boot-starter-version>
         <lombok-version>1.18.14</lombok-version>
         <fastjson-version>1.2.74</fastjson-version>
+        <jul-to-slf4j-version>1.7.30</jul-to-slf4j-version>
+        <log4j-to-slf4j-version>2.13.3</log4j-to-slf4j-version>
+        <logback-classic-version>1.2.3</logback-classic-version>
     </properties>
 
     <!--版本锁定-->
@@ -110,6 +113,32 @@
                 <groupId>com.example</groupId>
                 <artifactId>example-web-common</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- 日志 -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback-classic-version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-to-slf4j</artifactId>
+                <version>${log4j-to-slf4j-version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${jul-to-slf4j-version}</version>
+                <scope>compile</scope>
             </dependency>
 
 

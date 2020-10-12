@@ -1,8 +1,8 @@
 package com.common.web;
 
-import com.common.exceptions.ExceptionEnum;
-import com.common.exceptions.IException;
-import com.common.result.CommonResult;
+import com.common.core.exceptions.ExceptionEnum;
+import com.common.core.exceptions.IException;
+import com.common.core.result.CommonResult;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

@@ -1,4 +1,4 @@
-package com.common.exceptions;
+package com.common.core.exceptions;
 
 /**
  * 通用的枚举定义
