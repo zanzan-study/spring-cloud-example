@@ -3,6 +3,7 @@ package com.example.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * *********************************************************************
@@ -12,6 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @author huangfu
  * @date 2020/10/11 21:30
  */
-@Mapper
+@Repository
 public interface PaymentMapper extends BaseMapper<Payment> {
 }
