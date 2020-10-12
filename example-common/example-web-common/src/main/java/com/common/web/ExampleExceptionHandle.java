@@ -3,6 +3,8 @@ package com.common.web;
 import com.common.core.exceptions.ExceptionEnum;
 import com.common.core.exceptions.IException;
 import com.common.core.result.CommonResult;
+import com.common.core.utils.LogUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @date 2020/10/11 23:18
  */
 @RestControllerAdvice
+@Slf4j
 public class ExampleExceptionHandle {
 
     /**
@@ -25,7 +28,7 @@ public class ExampleExceptionHandle {
      */
     @ExceptionHandler(value = {Exception.class})
     public CommonResult requestException(Exception e) {
-        e.printStackTrace();
+        log.error("{}", LogUtil.getErrorStack(e));
         if (e instanceof IException) {
             return resultBuild(e);
         }

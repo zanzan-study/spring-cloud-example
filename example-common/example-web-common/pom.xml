@@ -16,12 +16,6 @@
             <artifactId>spring-webmvc</artifactId>
         </dependency>
 
-        <!-- lombok 版本锁定 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
         <!--fast-json 版本锁定 -->
         <dependency>
             <groupId>com.alibaba</groupId>

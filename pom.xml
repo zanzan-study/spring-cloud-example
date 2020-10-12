@@ -121,6 +121,23 @@
                 <version>${project.version}</version>
             </dependency>
 
+
+            <!--支付模块版本锁定开始-->
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-payment-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-payment-entity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--支付模块版本锁定结束-->
+
+
+
             <!-- 日志 -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
@@ -146,11 +163,15 @@
     </dependencyManagement>
 
     <build>
+        <finalName>spring-cloud-example</finalName>
         <plugins>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
             </plugin>
 
             <plugin>

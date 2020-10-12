@@ -1,8 +1,5 @@
 package com.common.core.exceptions;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-
 /**
  * *********************************************************************
  * 业务异常
@@ -50,19 +47,5 @@ public class BusinessException extends RuntimeException implements IException {
      */
     public static BusinessException warp(ExceptionEnum exceptionEnum, Throwable throwable) {
         return new BusinessException(exceptionEnum, throwable);
-    }
-
-    /**
-     * 获取并返回堆栈信息
-     *
-     * @param throwable 异常信息
-     * @return 堆栈信息
-     */
-    public static String getErrorStack(Throwable throwable) {
-        StringWriter sw = new StringWriter();
-        try (PrintWriter pw = new PrintWriter(sw)) {
-            throwable.printStackTrace(pw);
-            return sw.toString();
-        }
     }
 }

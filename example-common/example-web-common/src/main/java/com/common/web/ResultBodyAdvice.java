@@ -31,7 +31,7 @@ public class ResultBodyAdvice implements ResponseBodyAdvice {
         }
 
         if (body instanceof String) {
-            return JSON.toJSONString(body);
+            return CommonResult.ok(JSON.toJSONString(body));
         }
 
         return CommonResult.ok(body);
