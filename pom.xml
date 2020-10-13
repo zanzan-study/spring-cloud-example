@@ -37,6 +37,9 @@
         <jul-to-slf4j-version>1.7.30</jul-to-slf4j-version>
         <log4j-to-slf4j-version>2.13.3</log4j-to-slf4j-version>
         <logback-classic-version>1.2.3</logback-classic-version>
+        <springfox-swagger2-version>2.9.2</springfox-swagger2-version>
+        <swagger-bootstrap-ui-version>1.9.6</swagger-bootstrap-ui-version>
+        <knife4j-spring-boot-starter-version>2.0.5</knife4j-spring-boot-starter-version>
     </properties>
 
     <!--版本锁定-->
@@ -121,6 +124,24 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j-spring-boot-starter-version}</version>
+            </dependency>
+
 
             <!--支付模块版本锁定开始-->
             <dependency>
@@ -161,6 +182,7 @@
 
         </dependencies>
     </dependencyManagement>
+
 
     <build>
         <finalName>spring-cloud-example</finalName>

@@ -60,7 +60,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>example-payment-api</artifactId>
+            <artifactId>example-payment-entity</artifactId>
         </dependency>
 
     </dependencies>

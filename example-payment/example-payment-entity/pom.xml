@@ -12,6 +12,10 @@
     <artifactId>example-payment-entity</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>example-web-common</artifactId>
+        </dependency>
         <!-- lombok 版本锁定 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
