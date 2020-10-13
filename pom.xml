@@ -12,6 +12,7 @@
     <modules>
         <module>example-payment</module>
         <module>example-common</module>
+        <module>example-eureka-server</module>
     </modules>
 
     <name>spring-cloud-example</name>
