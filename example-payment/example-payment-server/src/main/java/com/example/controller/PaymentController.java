@@ -6,6 +6,7 @@ import com.example.service.PaymentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,8 @@ import java.util.List;
 @ResultAutoWarp
 @Slf4j
 public class PaymentController {
+    @Value("${server.port}")
+    private Integer port;
 
     private final PaymentService paymentService;
 
@@ -44,6 +47,7 @@ public class PaymentController {
     @PostMapping("findAllPayment")
     @ApiOperation(value = "查找所有支付流水", notes = "查找所有支付流水")
     public List<Payment> findAllPayment(){
+        log.info("端口号{}",port);
         log.info("-----------【查询支付数据】------------");
         return paymentService.findAllPayment();
     }

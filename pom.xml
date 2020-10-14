@@ -13,6 +13,7 @@
         <module>example-payment</module>
         <module>example-common</module>
         <module>example-eureka-server</module>
+        <module>example-order</module>
     </modules>
 
     <name>spring-cloud-example</name>
@@ -157,6 +158,19 @@
                 <version>${project.version}</version>
             </dependency>
             <!--支付模块版本锁定结束-->
+            <!--订单模块版本锁定开始-->
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-order-entity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-order-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--订单模块版本锁定结束-->
 
 
 
