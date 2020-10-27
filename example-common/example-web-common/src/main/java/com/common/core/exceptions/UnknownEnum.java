@@ -10,6 +10,11 @@ public enum UnknownEnum implements ExceptionEnum {
      * 通用错误
      */
     UNKNOWN_EXCEPTION("500000", "发生未知错误，请联系管理员！"),
+
+    /**
+     * 超时
+     */
+    TIMEOUT_UNKNOWN_EXCEPTION("500001", "系统繁忙，请稍后再试！"),
     /**
      * 通用成功
      */

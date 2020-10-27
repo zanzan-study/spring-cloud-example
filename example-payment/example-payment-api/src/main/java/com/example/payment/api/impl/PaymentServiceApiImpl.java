@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 public class PaymentServiceApiImpl implements PaymentServiceApi {
     @Override
     public CommonResult findAllPayment() {
-        return CommonResult.error();
+        return CommonResult.timeout();
     }
 }

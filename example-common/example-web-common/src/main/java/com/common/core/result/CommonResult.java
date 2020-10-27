@@ -46,6 +46,11 @@ public class CommonResult {
         return new CommonResult(UnknownEnum.UNKNOWN_EXCEPTION.getCode(), UnknownEnum.UNKNOWN_EXCEPTION.getMessage());
     }
 
+
+    public static CommonResult timeout() {
+        return new CommonResult(UnknownEnum.TIMEOUT_UNKNOWN_EXCEPTION.getCode(), UnknownEnum.TIMEOUT_UNKNOWN_EXCEPTION.getMessage());
+    }
+
     public static CommonResult error(UnknownEnum unknownEnum) {
         return new CommonResult(unknownEnum.getCode(), unknownEnum.getMessage());
     }
